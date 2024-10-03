@@ -5,7 +5,7 @@ import About from "./pages/About";
 import DetailProduct from "./pages/DetailProduct";
 import Wishlist2 from "./pages/Wishlist";
 import Wishlist from "./components/wishlist/Wishlist";
-import CheckOut from "./components/checkOut/checkOut";
+
 export const myRouter = createBrowserRouter([
   {
     path: "/",
@@ -22,19 +22,17 @@ export const myRouter = createBrowserRouter([
       {
         path: "product/:id",
         element: <DetailProduct />,
-      
+
       },
       {
-        path:'wishlist',
-        element:<Wishlist2/>
+        path: 'wishlist',
+        element: <Wishlist2 />
       },
-     { path:'wishlist2',
-      element:<Wishlist/>,
-      children:[
-        { path:'checkOut',
-        element:<CheckOut/>}]
-    },
-     
+      {
+        path: 'wishlist2',
+        element: <Wishlist />,
+      },
+
     ],
   },
 ]);
