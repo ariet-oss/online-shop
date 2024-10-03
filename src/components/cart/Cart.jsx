@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import './cart.scss'
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import dropUp from '../../assets/image/Drop-Up-small.png'
-import dropDown from '../../assets/image/Drop-Down-small.png'
+import dropUp from '../../assets/image/Drop-Up-Small.png'
+import dropDown from '../../assets/image/Drop-Down-Small.png'
 import { useSelector,useDispatch } from "react-redux";
 import {  incQunatity,incQunatityIn } from "../../locales/redux/cart/cart";
 import { Link } from "react-router-dom";
